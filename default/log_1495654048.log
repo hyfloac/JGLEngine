@@ -1,7 +1,0 @@
-[00:00:14] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [glPolygonMode]
-[00:00:26] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [glPolygonMode]
-[00:00:33] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: []
-[00:00:33] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.commands.GLCommand]: /GL <GL_PARAM> <VALUE>
-[00:00:40] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [ll]
-[00:00:46] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [glPolygonMode, x]
-[00:00:46] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: /GL <GL_PARAM> <VALUE>

@@ -1,6 +1,0 @@
-[00:00:06] [DefaultLogger:ERR] [java.lang.ThreadGroup]: java.lang.NullPointerException
-[00:00:06] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.render(Main.java:102)
-[00:00:06] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.render0(Game.java:73)
-[00:00:06] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.loop(Game.java:122)
-[00:00:06] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.main(Game.java:153)
-[00:00:06] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.main(Main.java:105)

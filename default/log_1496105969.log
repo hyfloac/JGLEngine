@@ -1,7 +1,0 @@
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: java.lang.ArrayIndexOutOfBoundsException: 1
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.config.Configuration.readConfig(Configuration.java:288)
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.config.Config.init(Config.java:22)
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.setupWindow(Main.java:34)
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.init0(Game.java:53)
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.main(Game.java:156)
-[00:00:15] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.main(Main.java:102)
