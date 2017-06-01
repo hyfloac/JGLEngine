@@ -1,0 +1,10 @@
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: java.lang.ExceptionInInitializerError
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at org.lwjgl.glfw.GLFW.glfwCreateWindow(GLFW.java:1384)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.window.Window.createWindow(Window.java:36)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.setupWindow(Main.java:35)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.init0(Game.java:53)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.main(Game.java:162)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.main(Main.java:102)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: Caused by: java.lang.IllegalStateException: GLFW windows may only be created on the main thread and that thread must be the first thread in the process. Please run the JVM with -XstartOnFirstThread. For offscreen rendering, make sure another window toolkit (e.g. AWT or JavaFX) is initialized before GLFW.
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at org.lwjgl.glfw.EventLoop$OffScreen.<clinit>(EventLoop.java:38)
+[00:00:00] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	... 6 more

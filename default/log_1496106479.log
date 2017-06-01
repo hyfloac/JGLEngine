@@ -1,0 +1,11 @@
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: java.lang.UnsupportedOperationException
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.google.common.collect.ImmutableMap.put(ImmutableMap.java:401)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.shader.Shader.createUniform(Shader.java:126)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.shader.Shader.setUniform(Shader.java:213)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.player.Camera.render(Camera.java:141)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.renderer.Renderer.render(Renderer.java:81)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.render(Main.java:98)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.render0(Game.java:77)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.loop(Game.java:126)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Game.main(Game.java:157)
+[00:00:03] [DefaultLogger:ERR] [java.lang.ThreadGroup]: 	at com.github.hyfloac.jglengine.Main.main(Main.java:102)

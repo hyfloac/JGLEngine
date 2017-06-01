@@ -1,0 +1,159 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = "com.github.hyfloac.jglengine.Main"
+
+applicationDefaultJvmArgs = [ "-Xmx2048M", "-Xms2000M", "-XX:+UnlockDiagnosticVMOptions", "-XX:+UnlockExperimentalVMOptions", "-Djansi.passthrough=true", "-XstartOnFirstThread", "-Djava.awt.headless=true", "-Dfile.encoding=UTF-8", "-XX:hashCode=5", "-XX:+UseG1GC", "-XX:+UseFastAccessorMethods", "-XX:+UseFastEmptyMethods", "-XX:+OptimizeStringConcat", "-XX:+UseStringDeduplication", "-XX:+AggressiveOpts", "-XX:ParallelGCThreads=2", "-Djdk.nio.maxCachedBufferSize=262144" ]
+
+//region LWJGL
+import org.gradle.internal.os.OperatingSystem
+
+switch (OperatingSystem.current()) {
+    case OperatingSystem.WINDOWS:
+        project.ext.lwjglNatives = "natives-windows"
+        break
+    case OperatingSystem.LINUX:
+        project.ext.lwjglNatives = "natives-linux"
+        break
+    case OperatingSystem.MAC_OS:
+        project.ext.lwjglNatives = "natives-macos"
+        break
+}
+
+project.ext.lwjglVersion = "3.1.0"
+project.ext.jomlVersion = "1.9.1"
+project.ext.steamworks4jVersion = "1.5.0"
+//endregion
+
+sourceSets {
+    ge {
+        java {
+            srcDir 'src/ge/java'
+        }
+        resources {
+            srcDir 'src/ge/resources'
+        }
+    }
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    flatDir { dirs 'libs' }
+    flatDir { dirs 'libs/utils' }
+    flatDir { dirs 'libs/log' }
+}
+
+run {
+    args = [ "fix", "dev", "debug" ]
+}
+
+dependencies {
+    geCompile 'com.google.guava:guava:19.0'
+    geCompile 'com.google.code.gson:gson:2.8.0'
+    geCompile 'com.google.code.findbugs:jsr305:3.0.1'
+    geCompile 'org.fusesource.jansi:jansi:1.12'
+    geCompile 'io.netty:netty-all:4.1.11.Final'
+
+    geCompile 'com.github.hyfloac.simplelog:SimpleLog:0.0.0A'
+    geCompile 'com.github.vitrifiedcode.javautilities:JavaUtilities:1.0.21'
+
+    geCompile 'com.goldmansachs:gs-collections-api:7.0.0'
+    geCompile 'com.goldmansachs:gs-collections:7.0.0'
+    testCompile 'com.goldmansachs:gs-collections-testutils:7.0.0'
+    geCompile 'com.goldmansachs:gs-collections-forkjoin:7.0.0'
+
+    geCompile "org.lwjgl:lwjgl:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-bgfx:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-egl:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-glfw:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-jawt:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-lmdb:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-nanovg:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-nfd:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-nuklear:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-openal:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-opencl:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-opengl:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-opengles:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-par:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-sse:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-stb:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-tinyfd:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-vulkan:${lwjglVersion}"
+    geCompile "org.lwjgl:lwjgl-xxhash:${lwjglVersion}"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-bgfx:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-lmdb:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-nanovg:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-nfd:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-nuklear:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-par:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-sse:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-stb:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-tinyfd:${lwjglVersion}:${lwjglNatives}"
+    runtime "org.lwjgl:lwjgl-xxhash:${lwjglVersion}:${lwjglNatives}"
+    geCompile "org.joml:joml:${jomlVersion}"
+    geCompile "com.code-disaster.steamworks4j:steamworks4j:${steamworks4jVersion}"
+
+    compile sourceSets.ge.output
+    compile configurations.geCompile
+    runtime configurations.geRuntime
+}
+
+jar {
+    from {
+        (configurations.runtime).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+//    manifest {
+//        attributes("Class-Path": configurations.compile.collect { it.getName() }.join(' '))
+//    }
+}
+
+
+ext.incrementVersionNumber = { ->
+    def versionPropsFile = file('version.properties')
+    def version = '1.0.0'
+
+
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+
+        versionProps.load(new FileInputStream(versionPropsFile))
+
+        def versionBuild = versionProps['VERSION_BUILD'].toInteger() + 1
+
+        version = versionProps['VERSION_MAJOR'] + "." + versionProps['VERSION_MINOR'] + "." + versionProps['VERSION_BUILD']
+
+        println version
+
+        versionProps['VERSION_BUILD'] = versionBuild.toString()
+        versionProps.store(versionPropsFile.newWriter(), null)
+    } else {
+        version = '1.0.0'
+    }
+
+    return version
+}
+
+group 'com.github.hyfloac.jglengine'
+version incrementVersionNumber()

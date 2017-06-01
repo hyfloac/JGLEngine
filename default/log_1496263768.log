@@ -1,0 +1,4 @@
+[00:02:29] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [glPolygonMode]
+[00:02:44] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [glPolygonMode, true]
+[00:02:52] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [glPolygonMode, false]
+[00:03:15] [DefaultLogger:OUT] [com.github.hyfloac.jglengine.command.CLI]: [exit]
