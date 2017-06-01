@@ -2,77 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3f4936-a6b8-4892-a09a-8e2840f0eb8a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaGameEngine.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/font/Char.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/font/FontCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/font/FontData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/font/Text.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/Character.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/FontType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/GUIText.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/Line.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/MetaFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/TextMeshCreator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/TextMeshData.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontMeshCreator/Word.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontRendering/FontRenderer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/fontRendering/FontShader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/renderer/FontRenderer.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/Game.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/IRotatable.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/IRotatable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/IScalable.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/IScalable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/ITransformable.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/ITransformable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/ITranslatable.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/ITranslatable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/Transformable.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/Transformable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/cli/InputThread.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/cli/InputThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/CLI.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/CLI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/Command.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/GLCommand.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/GLCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/exception/CommandUsageException.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/exception/CommandUsageException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/config/Config.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/config/Config.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/config/Configuration.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/config/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/EventBus.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/EventBus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/EventSubscription.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/EventSubscription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/Event.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/Event.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventCursorEnterWindow.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventCursorEnterWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventCursorMove.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventCursorMove.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventExit.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventExit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventKeyInput.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventKeyInput.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventMouseButton.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventMouseButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventWindowResize.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/events/EventWindowResize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/handler/CameraMovementHandler.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/handler/CameraMovementHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/handler/KeyInputHandler.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/event/handler/KeyInputHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/GameObject.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/GameObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/Model.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/OBJParser.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/OBJParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/Texture.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/model/Texture.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/player/Camera.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/player/Camera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/reference/Models.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/reference/Models.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/reference/Reference.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/reference/Reference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/reference/Textures.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/reference/Textures.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/renderer/Renderer.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/renderer/Renderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/resources/ResourceHelper.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/resources/ResourceHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/Light.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/Light.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/Shader.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/Shader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/exception/InvalidShaderTypeException.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/exception/InvalidShaderTypeException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/exception/ShaderCompilationException.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/exception/ShaderCompilationException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/exception/ShaderException.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/shader/exception/ShaderException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/tick/ITickable.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/tick/ITickable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/ColorUtil.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/ColorUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/Debug.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/Debug.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/Log.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/Log.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/MatrixUtil.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/MatrixUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/Timer.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/util/Timer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/window/GLUtil.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/window/GLUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/window/Window.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/window/Window.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/world/Terrain.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/world/Terrain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/world/World.java" afterPath="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/world/World.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/reference/Models.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/reference/Models.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/reference/Reference.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/reference/Reference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/reference/Textures.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/hyfloac/jglengine/reference/Textures.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/version.properties" afterPath="$PROJECT_DIR$/version.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JGLEngine.iws" afterPath="$PROJECT_DIR$/JGLEngine.iws" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -141,7 +72,18 @@
     <favorites_list name="JGLEngine" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -570,7 +512,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/window/GLUtil.java" />
         <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/IRotatable.java" />
         <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/ITransformable.java" />
         <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/axis/ITranslatable.java" />
@@ -621,6 +562,7 @@
         <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/Game.java" />
         <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/world/World.java" />
         <option value="$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/world/Terrain.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -1086,15 +1028,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496328288330</updated>
-      <workItem from="1496328289582" duration="1268000" />
+      <workItem from="1496328289582" duration="1337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1268000" />
+    <option name="totallyTimeSpent" value="1337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="689" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1106,7 +1049,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1138,14 +1081,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/command/commands/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="374" column="3" lean-forward="false" selection-start-line="374" selection-start-column="3" selection-end-line="374" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ge/java/com/github/hyfloac/jglengine/cli/InputThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1546,6 +1481,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding />
         </state>
       </provider>
