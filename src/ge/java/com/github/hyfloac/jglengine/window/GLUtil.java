@@ -432,11 +432,15 @@ public final class GLUtil
 
     public static void backfaceCulling() { backfaceCulling(!backfaceCulling); }
 
+    public static boolean depthTest = true;
     public static void depthTest(boolean enabled)
     {
+        depthTest = enabled;
         if(enabled) { GL11.glEnable(GL11.GL_DEPTH_TEST); }
         else { GL11.glDisable(GL11.GL_DEPTH_TEST); }
     }
+
+    public static void depthTest() { depthTest(!depthTest); }
 
     public static boolean cursorVisible = false;
     public static void cursorVisibility(boolean enabled, long windowHandle)

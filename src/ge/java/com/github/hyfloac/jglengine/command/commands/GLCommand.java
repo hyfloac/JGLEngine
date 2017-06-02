@@ -378,14 +378,22 @@ package com.github.hyfloac.jglengine.command.commands;
 import com.github.hyfloac.jglengine.command.commands.exception.CommandUsageException;
 import com.github.hyfloac.jglengine.reference.Reference;
 import com.github.hyfloac.jglengine.window.GLUtil;
+import com.github.vitrifiedcode.javautilities.array.ArrayUtil;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 
 public class GLCommand extends Command
 {
-    @Override
-    public String[] getNames() { return new String[] { "GL", "openGL" }; }
+    public GLCommand() { super("GL", "openGL"); }
+
+    private static String[][] commands = new String[][] {
+            new String[] { "glPolygonMode", "polygonMode", "GL_POLYGON_MODE", "POLYGON_MODE" },
+            new String[] { "glClearColor", "clearColor" },
+            new String[] { "glDepthTest", "depthTest" },
+            new String[] { "glBackfaceCulling", "backfaceCulling", "glCullBackFace", "cullBackFace", "glCullBack", "cullBack" },
+            new String[] { "alias" }
+    };
 
     @Override
     public String getUsage()
@@ -399,7 +407,7 @@ public class GLCommand extends Command
         if(args.length < 1) { throw new CommandUsageException(getUsage()); }
         int gl11 = 0;
         try { gl11 = parseInt(args[0]); }
-        catch(NumberFormatException ignored) { }
+        catch(CommandUsageException ignored) { }
 
         if(gl11 != 0)
         {
@@ -417,7 +425,7 @@ public class GLCommand extends Command
             try { GL.getCapabilities(); }
             catch(Exception ignored) { GL.createCapabilities(); }
 
-            if(equals(args[0], "glPolygonMode", "polygonMode", "GL_POLYGON_MODE", "POLYGON_MODE"))
+            if(equals(args[0], commands[0]))
             {
                 if(args.length > 1)
                 {
@@ -428,7 +436,7 @@ public class GLCommand extends Command
                 else { GLUtil.debugPolygons(); }
                 return true;
             }
-            else if(equals(args[0], "glClearColor"))
+            else if(equals(args[0], commands[1]))
             {
                 if(args.length > 3)
                 {
@@ -440,6 +448,41 @@ public class GLCommand extends Command
                     }
                     catch(NumberFormatException e) { throw new CommandUsageException("Invalid floating point number."); }
                 }
+            }
+            else if(equals(args[0], commands[2]))
+            {
+                if(args.length > 1)
+                {
+                    Boolean it = isTrue(args[1]);
+                    if(it == null) { throw new CommandUsageException(getUsage()); }
+                    GLUtil.depthTest(it);
+                }
+                else { GLUtil.depthTest(); }
+                return true;
+            }
+            else if(equals(args[0], commands[3]))
+            {
+                if(args.length > 1)
+                {
+                    Boolean it = isTrue(args[1]);
+                    if(it == null) { throw new CommandUsageException(getUsage()); }
+                    GLUtil.backfaceCulling(it);
+                }
+                else { GLUtil.backfaceCulling(); }
+                return true;
+            }
+            else if(equals(args[0], commands[4]))
+            {
+                if(args.length != 3) { return false; }
+                for(int i = 0; i < commands.length; ++i)
+                {
+                    if(equals(args[1], commands[i]))
+                    {
+                        commands[i] = ArrayUtil.append(commands[i], args[2]);
+                        return true;
+                    }
+                }
+                return false;
             }
         }
 

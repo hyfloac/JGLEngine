@@ -376,8 +376,8 @@ defined by the Mozilla Public License, v. 2.0.
 package com.github.hyfloac.jglengine.command.commands;
 
 import com.github.hyfloac.jglengine.command.commands.exception.CommandUsageException;
+import com.github.vitrifiedcode.javautilities.array.ArrayUtil;
 import com.github.vitrifiedcode.javautilities.object.BitConverter;
-import com.github.vitrifiedcode.javautilities.object.ObjectUtil;
 import com.github.vitrifiedcode.javautilities.string.StringUtil;
 
 import javax.annotation.Nonnull;
@@ -386,7 +386,11 @@ import java.util.Base64;
 @SuppressWarnings("unused")
 public abstract class Command
 {
-    public abstract String[] getNames();
+    public String[] aliases;
+
+    public Command(String... aliases) { this.aliases = aliases; }
+
+    public void addAlias(String alias) { aliases = ArrayUtil.append(aliases, alias); }
 
     public abstract String getUsage();
 
@@ -394,7 +398,7 @@ public abstract class Command
     {
         if(StringUtil.equalsIgnoreCase("true", in) || StringUtil.equals("1", in) || StringUtil.equalsIgnoreCase("enabled", in)) { return Boolean.TRUE; }
         else if(StringUtil.equalsIgnoreCase("false", in) || StringUtil.equals("0", in) || StringUtil.equalsIgnoreCase("disabled", in)) { return Boolean.FALSE; }
-        return null;
+        return Boolean.FALSE;
     }
 
     public static int parseInt(String in) throws CommandUsageException
@@ -448,6 +452,6 @@ public abstract class Command
     @Override
     public boolean equals(Object obj)
     {
-        return obj != null && obj instanceof Command && StringUtil.equalsIgnoreCase(getNames(), ((Command) obj).getNames());
+        return obj != null && obj instanceof Command && StringUtil.equalsIgnoreCase(aliases, ((Command) obj).aliases);
     }
 }

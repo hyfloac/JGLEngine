@@ -456,7 +456,9 @@ public abstract class Game
 
     public static int timeStep = 1_000;
     public static int timeStep0 = timeStep / 1000;
-    public static boolean logStuff = true;
+    public static boolean logStuff;
+
+    public static boolean renderLive;
 
     private void loop()
     {
@@ -494,7 +496,7 @@ public abstract class Game
              * if you don't do this you will get a copious high FPS which rapidly causes memory usage to increase (this is how I know
              * that the memory leak is in the render method).
              */
-            while(delta <= 1.0f && window.isFocused())
+            while(delta <= 1.0f && (window.isFocused() || renderLive))
             {
                 now = System.currentTimeMillis();
                 delta += (now - lastTime) / ns;

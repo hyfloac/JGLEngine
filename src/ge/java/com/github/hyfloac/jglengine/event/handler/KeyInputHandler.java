@@ -443,12 +443,7 @@ public class KeyInputHandler
         else if(cursor.check(event)) { GLUtil.cursorVisibility(Reference.WINDOW_HANDLE); }
         else if(key == GLFW.GLFW_KEY_9 && event.action == GLFW.GLFW_PRESS) { Game.timeStep -= 1000; }
         else if(key == GLFW.GLFW_KEY_0 && event.action == GLFW.GLFW_PRESS) { Game.timeStep += 1000; }
-        else if(key == GLFW.GLFW_KEY_Z && event.action == GLFW.GLFW_PRESS) { Game.logStuff = !Game.logStuff; Logger.debugS(Game.logStuff); }
-        else if(x0.check(event)) { FontRenderer.x += 0.1F; }
-        else if(x1.check(event)) { FontRenderer.x -= 0.1F; }
-        else if(y0.check(event)) { FontRenderer.y += 0.1F; }
-        else if(y1.check(event)) { FontRenderer.y -= 0.1F; }
-
+        else if(key == GLFW.GLFW_KEY_Z && event.action == GLFW.GLFW_PRESS) { Game.logStuff = !Game.logStuff; }
     }
 
     @EventSubscription

@@ -385,6 +385,7 @@ import com.gs.collections.api.multimap.MutableMultimap;
 import com.gs.collections.api.tuple.primitive.ObjectIntPair;
 import com.gs.collections.impl.multimap.bag.HashBagMultimap;
 import com.gs.collections.impl.tuple.primitive.PrimitiveTuples;
+import org.lwjgl.glfw.GLFW;
 
 import javax.annotation.Nonnull;
 import java.lang.reflect.InvocationTargetException;
@@ -420,16 +421,12 @@ public class EventBus
 
     public void dispatch(final @Nonnull Event event)
     {
-        for(final Class<? extends Event> real : handlers.keyBag())
+        for(final Class<? extends Event> real : handlers.keysView())
         {
             if(real.isAssignableFrom(event.getClass()))
             {
                 for(final SortedSetMultimap<Object, ObjectIntPair<Method>> handler : handlers.get(real))
                 {
-                    if(event instanceof EventKeyInput)
-                    {
-                        Logger.debugS(handlers.keyBag().size());
-                    }
                     for(final Object clazz : handler.keySet())
                     {
                         for(final ObjectIntPair<Method> method : handler.get(clazz))

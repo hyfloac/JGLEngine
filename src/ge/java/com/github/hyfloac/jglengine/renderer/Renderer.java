@@ -455,7 +455,7 @@ public class Renderer implements ITickable
         Reference.SHADER.unbind();
     }
 
-    public void add(GameObject obj) { worldObjects.put(obj.getModel(), obj); }
+    public synchronized void add(GameObject obj) { worldObjects.put(obj.getModel(), obj); }
 
     public void add(Light light) { lights.add(light); }
 

@@ -376,6 +376,7 @@ defined by the Mozilla Public License, v. 2.0.
 package com.github.hyfloac.jglengine.resources;
 
 import com.github.hyfloac.jglengine.Game;
+import com.github.hyfloac.jglengine.reference.Reference;
 import com.github.hyfloac.simplelog.Logger;
 import com.github.vitrifiedcode.javautilities.io.ResourceUtil;
 import com.github.vitrifiedcode.javautilities.math.MathUtil;
@@ -399,15 +400,13 @@ public final class ResourceHelper
 
     private static String gameDataDir = null;
 
-    static final boolean DEV_ENV = System.getProperty("devEnv") != null;
-
     @SuppressWarnings("ResultOfMethodCallIgnored")
     public static String getGameDataDir()
     {
         if(gameDataDir == null)
         {
             String path = Properties.OS.USER_HOME + "/Documents/My Games";
-            if(DEV_ENV) { path = Properties.OS.USER_DIR + "/My Games"; }
+            if(Reference.DEV_ENVIRONMENT) { path = Properties.OS.USER_DIR + "/My Games"; }
             path += "/" + Game.instance().name;
             File f = new File(path);
             if(!f.exists()) { f.mkdirs(); }

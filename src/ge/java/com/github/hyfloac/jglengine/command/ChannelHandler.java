@@ -375,6 +375,10 @@ defined by the Mozilla Public License, v. 2.0.
  */
 package com.github.hyfloac.jglengine.command;
 
+import com.github.hyfloac.jglengine.command.commands.Command;
+import com.github.hyfloac.simplelog.Logger;
+import com.github.vitrifiedcode.javautilities.other.RandomUtil;
+import com.github.vitrifiedcode.javautilities.string.StringUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -383,20 +387,34 @@ import io.netty.util.ReferenceCountUtil;
 
 public class ChannelHandler extends ChannelInboundHandlerAdapter
 {
+    private String code;
+
+    private boolean allowedAccess;
+
+    public ChannelHandler()
+    {
+        code = RandomUtil.getRandomString(6, "abcdefghkrstwxyz2345679");
+//        Logger.debugS(code);
+        allowedAccess = true;
+    }
+
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg)
     {
-        ByteBuf in = (ByteBuf) msg;
         try
         {
-            String ss = in.toString(CharsetUtil.US_ASCII);
-            System.out.print(ss);
-            CLI.parse(ss);
+            ByteBuf in = (ByteBuf) msg;
+            String ss = StringUtil.NEW_LINE_PATTERN.matcher(in.toString(CharsetUtil.US_ASCII)).replaceAll("");
+
+            if(allowedAccess)
+            {
+                Logger.debugS("Console In: " + ss);
+                CommandHandler.parse(ss);
+            }
+            else if(ss.contains(code)) { allowedAccess = true; }
         }
-        finally
-        {
-            ReferenceCountUtil.release(msg);
-        }
+        finally { ReferenceCountUtil.release(msg); }
+
     }
 
     @Override

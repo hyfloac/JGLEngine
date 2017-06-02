@@ -399,7 +399,6 @@ public class Main extends Game
     public Main()
     {
         super(new Window(), "Test0x00");
-        this.cli = new CLI();
     }
 
     @Override
@@ -413,6 +412,7 @@ public class Main extends Game
     @Override
     protected void init()
     {
+        this.cli = new CLI();
 //        new Camera(new Vector3f(0.0f, 10.0f, 0.0f), new Vector3f(25.0f, 135.0f, 0.0f));
         new Camera(new Vector3f(1.0f, 0.0f, 0.0f), new Vector3f(0.0f, 0.0f, 0.0f));
 

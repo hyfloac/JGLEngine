@@ -381,11 +381,7 @@ import com.github.hyfloac.jglengine.event.events.EventExit;
 
 public class ExitCommand extends Command
 {
-    @Override
-    public String[] getNames()
-    {
-        return new String[] { "exit", "quit", "stop" };
-    }
+    public ExitCommand() { super("exit", "quit", "stop"); }
 
     @Override
     public String getUsage()

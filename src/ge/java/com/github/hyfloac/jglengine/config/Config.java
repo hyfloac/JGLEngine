@@ -375,6 +375,7 @@ defined by the Mozilla Public License, v. 2.0.
  */
 package com.github.hyfloac.jglengine.config;
 
+import com.github.hyfloac.jglengine.Game;
 import com.github.hyfloac.jglengine.reference.Reference;
 import com.github.hyfloac.jglengine.resources.ResourceHelper;
 import com.github.hyfloac.simplelog.Logger;
@@ -407,6 +408,8 @@ public final class Config
             config.addSetting("Sets whether or not the window should be in fullscreen mode.", "Fullscreen", false);
             config.addSetting("Sets the Field Of View.", "FOV", 60.0f);
             config.addSetting("Sets the view distance.", "ViewDist", 1000.0f);
+            config.addSetting("Should log FPS and memory usage to the console.", "LogFPS", true);
+            config.addSetting("Should continue rendering when the window is not in focus.", "RenderLive", false);
             config.writeSettings();
         }
         try
@@ -422,6 +425,8 @@ public final class Config
             Reference.FULLSCREEN = (boolean) config.getSetting("Fullscreen").value;
             Reference.FOV = (float) config.getSetting("FOV").value;
             Reference.VIEW_DISTANCE = (float) config.getSetting("ViewDist").value;
+            Game.logStuff = (boolean) config.getSetting("LogFPS").value;
+            Game.renderLive = (boolean) config.getSetting("RenderLive").value;
         } catch(IOException e) { Logger.INSTANCE.trace(e); }
     }
 }
